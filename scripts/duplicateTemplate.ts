@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { createId } from "@paralleldrive/cuid2";
 
-const DUPLICATE_X_TIMES = 100;
+const DUPLICATE_X_TIMES = 5000;
 
 async function readTemplateFile(filePath: string): Promise<string> {
   try {
