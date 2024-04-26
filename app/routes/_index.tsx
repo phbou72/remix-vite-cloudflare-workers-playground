@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 };
 
 export function loader() {
-  return json({ data });
+  return json({ dataLength: data.data.length });
 }
 
 export default function Index() {
