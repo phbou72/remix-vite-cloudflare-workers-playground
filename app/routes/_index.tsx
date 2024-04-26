@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+import { json, type MetaFunction } from "@remix-run/cloudflare";
 
 import data from "../data/data.json";
 
@@ -12,7 +12,10 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export function loader() {
+  return json({ data });
+}
+
 export default function Index() {
-  console.log(data);
   return <h1>Home</h1>;
 }
