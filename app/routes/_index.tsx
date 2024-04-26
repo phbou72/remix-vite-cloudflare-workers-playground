@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 
+import "../data/data.json";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Remix + Vite + Cloudflare Workers" },
