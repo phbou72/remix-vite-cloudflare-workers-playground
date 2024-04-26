@@ -2,7 +2,7 @@ import { writeFile } from "node:fs/promises";
 
 const ONE_MB = 1000000; // Approximate bytes for 1 MB
 
-const X_TIME = 4;
+const X_TIME = 3;
 
 function generateLargeRandomString(size: number) {
   const characters =
